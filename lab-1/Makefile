@@ -1,4 +1,4 @@
-CC	= arm-linux-gnueabihf-gcc
+CC	= armv6-rpi-linux-gnueabi-gcc
 CFLAGS	= -O1 -Wall
 LDFLAGS = -fno-stack-protector
 
