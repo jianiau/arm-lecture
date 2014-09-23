@@ -1,5 +1,15 @@
+#if __ARM_ARCH_ISA_THUMB ==2
+	.syntax unified
+#else
 	.syntax divided
+#endif
+
+#if defined(__ARM_ARCH_7A__)
+	.arch armv7-a
+#endif
+#if defined(__ARM_ARCH_6ZK__ )
 	.arch armv6zk
+#endif
 	.text
 	.align 2
 	.thumb
